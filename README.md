@@ -1,4 +1,4 @@
-# HoneycombMaze
+# Honeycomb Maze
 
 ## Overview
 
