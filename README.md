@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project was created as a coursework project for the 'Programming Applications and Programming Langugages' module, second year BSc(Hons.) Compugter Science course at University of Portsmouth.
+This project was created as a coursework project for the 'Programming Applications and Programming Languages' module, second year BSc(Hons.) Compugter Science course at University of Portsmouth.
 
 ## Further Context
 
