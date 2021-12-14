@@ -9,10 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.HoneycombMaze">
-        <activity android:name=".MainActivity"
-            android:theme="@style/Theme.HoneycombMaze.noActionBar"
+        <activity
+            android:name=".GameActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
             android:screenOrientation="portrait"
-            android:exported="true">
+            android:theme="@style/Theme.HoneycombMaze.noActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
