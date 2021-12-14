@@ -11,6 +11,8 @@
         android:theme="@style/Theme.HoneycombMaze">
         <activity
             android:name=".GameActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.HoneycombMaze.noActionBar"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
