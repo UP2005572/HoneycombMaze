@@ -12,53 +12,50 @@
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
         android:src="@drawable/start_screen" />
-    <RelativeLayout
+    <FrameLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true">
         <ImageView android:id="@+id/chamber"
             android:layout_width="396dp"
             android:layout_height="357dp"
-            android:layout_centerInParent="true"
+            android:layout_gravity="center"
             android:src="@drawable/blank_hex"/>
 
-        <ImageView android:id="@+id/bee"
+        <ImageView
+            android:id="@+id/bee"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/bee"
-            android:scaleX="0.25"
-            android:scaleY="0.25"
-            android:layout_centerInParent="true"
-        />
+            android:layout_gravity="center"
+            android:src="@drawable/bee" />
 
         <ImageView
             android:id="@+id/tButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
-            android:baselineAlignBottom="false"
-            android:cropToPadding="true"
-            android:scaleX="0.15"
-            android:scaleY="0.15"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginTop="30dp"
+            android:scaleType="centerCrop"
             android:src="@drawable/dir_button" />
 
         <ImageView
             android:id="@+id/trButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:cropToPadding="true"
-            android:rotation="45"
-            android:scaleX="0.15"
-            android:scaleY="0.15"
+            android:rotation="60"
+            android:layout_gravity="top|right"
+            android:layout_marginTop="100dp"
+            android:layout_marginRight="60dp"
             android:src="@drawable/dir_button" />
 
         <ImageView android:id="@+id/brButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:scaleX="0.15"
-            android:scaleY="0.15"
             android:src="@drawable/dir_button"
-            android:rotation="135"/>
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="100dp"
+            android:layout_marginRight="60dp"
+            android:rotation="120"/>
 
 
         <ImageView
@@ -66,25 +63,30 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:rotation="180"
-            android:scaleX="0.15"
-            android:scaleY="0.15"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="30dp"
             android:src="@drawable/dir_button" />
 
-        <ImageView android:id="@+id/blButton"
+        <ImageView
+            android:id="@+id/blButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:scaleX="0.15"
-            android:scaleY="0.15"
-            android:src="@drawable/dir_button"
-            android:rotation="-135"/>
+            android:rotation="-120"
+            android:layout_gravity="bottom|left"
+            android:layout_marginBottom="100dp"
+            android:layout_marginLeft="60dp"
+            android:src="@drawable/dir_button" />
 
         <ImageView
             android:id="@+id/tlButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:rotation="-45"
-            android:scaleX="0.15"
-            android:scaleY="0.15"
+            android:rotation="-60"
+            android:layout_gravity="top|left"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="60dp"
             android:src="@drawable/dir_button" />
-    </RelativeLayout>
+
+    </FrameLayout>
+
 </RelativeLayout>
