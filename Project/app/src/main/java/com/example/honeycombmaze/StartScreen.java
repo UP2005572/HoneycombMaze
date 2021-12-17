@@ -7,21 +7,21 @@ import android.view.View;
 import android.widget.ImageView;
 import android.content.*;
 
-public class MainActivity extends AppCompatActivity {
+public class StartScreen extends AppCompatActivity {
 
     ImageView startButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_start_screen);
 
         startButton = (ImageView) findViewById(R.id.hexagon);
 
         startButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Intent startToGame = new Intent(MainActivity.this, InChamberActivity.class);
+                Intent startToGame = new Intent(StartScreen.this, IntroScreen.class);
                 startActivity(startToGame);
             }
         });
