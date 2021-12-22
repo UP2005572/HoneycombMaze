@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">HoneycombMaze</string>
+    <string name="Fail_message">That\'s the wrong door! The rest of the hive is unimpressed.
+        Back to the start for you!</string>
 </resources>

@@ -7,8 +7,34 @@
     tools:context=".FallenOutScreen">
 
     <ImageView
+        android:id="@+id/background"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src=""
+        android:scaleType="centerCrop"
+        android:src="@drawable/fallen_out_screen" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Fail_message"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="150dp"
+        android:layout_marginHorizontal="20dp"
+        android:textColor="@color/main_yellow"
+        android:fontFamily="sans-serif"
+        android:textSize="35dp"/>
+
+    <ImageView
+        android:id="@+id/restartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="111dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginVertical=""
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="200dp"
+        android:src="@drawable/restart_button" />
 </RelativeLayout>
