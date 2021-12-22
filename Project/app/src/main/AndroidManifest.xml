@@ -10,10 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HoneycombMaze">
         <activity
-            android:name=".IntroScreen"
+            android:name=".FallenOutScreen"
+            android:exported="false"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.HoneycombMaze.noActionBar"
-            android:exported="false" />
+            android:theme="@style/Theme.HoneycombMaze.noActionBar"/>
+        <activity
+            android:name=".IntroScreen"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.HoneycombMaze.noActionBar" />
         <activity
             android:name=".InChamberActivity"
             android:exported="false"
