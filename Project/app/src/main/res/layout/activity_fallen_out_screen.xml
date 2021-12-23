@@ -29,7 +29,6 @@
         android:layout_width="wrap_content"
         android:layout_height="111dp"
         android:layout_alignParentBottom="true"
-        android:layout_marginVertical=""
         android:layout_marginStart="50dp"
         android:layout_marginLeft="50dp"
         android:layout_marginTop="50dp"
