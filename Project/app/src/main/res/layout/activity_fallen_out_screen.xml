@@ -20,7 +20,7 @@
         android:layout_marginTop="150dp"
         android:fontFamily="sans-serif"
         android:gravity="center_horizontal"
-        android:text="@string/Fail_message"
+        android:text="@string/fail_message"
         android:textColor="@color/main_yellow"
         android:textSize="35dp" />
 

@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">HoneycombMaze</string>
-    <string name="Fail_message">That\'s the wrong door! The rest of the hive is unimpressed.
+    <string name="fail_message">That\'s the wrong door! The rest of the hive is unimpressed.
         Back to the start for you!</string>
+
+    <string name="success_message">Congratulations! You\'ve made it to the end of the maze.
+    You have proven yourself to the rest of the hive. Your peers are very impressed!</string>
 </resources>
