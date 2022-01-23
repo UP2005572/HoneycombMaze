@@ -35,5 +35,6 @@
         android:layout_marginEnd="50dp"
         android:layout_marginRight="50dp"
         android:layout_marginBottom="200dp"
-        android:src="@drawable/restart_button" />
+        android:src="@drawable/restart_button"
+        android:clickable="true"/>
 </RelativeLayout>

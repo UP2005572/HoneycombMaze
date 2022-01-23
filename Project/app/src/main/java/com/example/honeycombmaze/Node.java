@@ -1,3 +1,5 @@
+package com.example.honeycombmaze;
+
 public class Node {
 
     private int[] linkIDs;

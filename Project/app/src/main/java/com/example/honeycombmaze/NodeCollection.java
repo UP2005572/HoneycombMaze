@@ -1,4 +1,5 @@
 //import org.jetbrains.annotations.NotNull;
+package com.example.honeycombmaze;
 
 import java.io.FileNotFoundException;
 import java.util.ArrayList;

@@ -1,6 +1,5 @@
+package com.example.honeycombmaze;
 import java.io.FileNotFoundException;
-
-
 
 public class NodeMap {
 

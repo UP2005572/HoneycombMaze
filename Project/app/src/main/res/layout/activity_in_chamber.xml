@@ -36,7 +36,8 @@
             android:layout_gravity="center_horizontal|top"
             android:layout_marginTop="30dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/dir_button" />
+            android:src="@drawable/dir_button"
+            android:clickable="true"/>
 
         <ImageView
             android:id="@+id/trButton"
@@ -46,7 +47,8 @@
             android:layout_gravity="top|right"
             android:layout_marginTop="100dp"
             android:layout_marginRight="60dp"
-            android:src="@drawable/dir_button" />
+            android:src="@drawable/dir_button"
+            android:clickable="true"/>
 
         <ImageView android:id="@+id/brButton"
             android:layout_width="wrap_content"
@@ -55,7 +57,8 @@
             android:layout_gravity="bottom|right"
             android:layout_marginBottom="100dp"
             android:layout_marginRight="60dp"
-            android:rotation="120"/>
+            android:rotation="120"
+            android:clickable="true"/>
 
 
         <ImageView
@@ -65,7 +68,8 @@
             android:rotation="180"
             android:layout_gravity="center_horizontal|bottom"
             android:layout_marginBottom="30dp"
-            android:src="@drawable/dir_button" />
+            android:src="@drawable/dir_button"
+            android:clickable="true"/>
 
         <ImageView
             android:id="@+id/blButton"
@@ -75,7 +79,8 @@
             android:layout_gravity="bottom|left"
             android:layout_marginBottom="100dp"
             android:layout_marginLeft="60dp"
-            android:src="@drawable/dir_button" />
+            android:src="@drawable/dir_button"
+            android:clickable="true"/>
 
         <ImageView
             android:id="@+id/tlButton"
@@ -85,7 +90,8 @@
             android:layout_gravity="top|left"
             android:layout_marginTop="100dp"
             android:layout_marginLeft="60dp"
-            android:src="@drawable/dir_button" />
+            android:src="@drawable/dir_button"
+            android:clickable="true"/>
 
     </FrameLayout>
 
