@@ -2,6 +2,7 @@
 package com.example.honeycombmaze;
 
 import java.io.FileNotFoundException;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -30,9 +31,8 @@ public class NodeCollection {
 /**************         BUILD      ******************/
 /****************************************************/
 /****************************************************/
-    public NodeCollection()  throws FileNotFoundException {
-        java.io.File prc = new java.io.File("src/backend.csv");
-        Scanner fileRef = new Scanner(prc);
+    public NodeCollection(InputStream in_s)  throws FileNotFoundException {
+        Scanner fileRef = new Scanner(in_s);
         nodes = new ArrayList<Node>();
         Node node;
         while (fileRef.hasNext()) {

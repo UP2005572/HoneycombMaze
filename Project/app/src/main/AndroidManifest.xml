@@ -28,12 +28,13 @@
             android:name=".InChamberActivity"
             android:exported="false"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.HoneycombMaze.noActionBar" />
+            android:theme="@style/Theme.HoneycombMaze.noActionBar"/>
         <activity
             android:name=".StartScreen"
             android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.HoneycombMaze.noActionBar">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

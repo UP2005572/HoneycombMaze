@@ -1,5 +1,6 @@
 package com.example.honeycombmaze;
 import java.io.FileNotFoundException;
+import java.io.InputStream;
 
 public class NodeMap {
 
@@ -42,10 +43,10 @@ public class NodeMap {
 /****************************************************/
 /****************************************************/
 
-    public NodeMap()  {
+    public NodeMap(InputStream in_s)  {
         NodeCollection nodeCollection;   //scope: constructor only, part of process, no requirement to keep;
         try {
-            nodeCollection = new NodeCollection();
+            nodeCollection = new NodeCollection(in_s);
             head = nodeCollection.get(0);
         } catch (FileNotFoundException e) {
             //message
