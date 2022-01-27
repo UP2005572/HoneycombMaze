@@ -23,7 +23,7 @@ public class InChamberActivity extends AppCompatActivity {
         InputStream in_s = getCSVRes();
         nodeMap = new NodeMap(in_s);
 
-        BeeAnimation(1);
+        //BeeAnimation(1);
     }
 
 
@@ -38,6 +38,8 @@ public class InChamberActivity extends AppCompatActivity {
         button.setVisibility(View.VISIBLE);
     }
 
+    public void GoneButton(ImageView button) {button.setVisibility(View.GONE);}
+
     public void HideButton(ImageView button){
         button.setVisibility(View.INVISIBLE);
     }
@@ -50,23 +52,17 @@ public class InChamberActivity extends AppCompatActivity {
         float xPos = bee.getX();
         float yPos = bee.getY();
 
-        HideButton((ImageView) findViewById(R.id.tButton));
-        HideButton((ImageView) findViewById(R.id.trButton));
-        HideButton((ImageView) findViewById(R.id.brButton));
-        HideButton((ImageView) findViewById(R.id.bButton));
-        HideButton((ImageView) findViewById(R.id.blButton));
-        HideButton((ImageView) findViewById(R.id.tlButton));
+       /*GoneButton((ImageView) findViewById(R.id.tButton));
+        GoneButton((ImageView) findViewById(R.id.trButton));
+        GoneButton((ImageView) findViewById(R.id.brButton));
+        GoneButton((ImageView) findViewById(R.id.bButton));
+        GoneButton((ImageView) findViewById(R.id.blButton));
+        GoneButton((ImageView) findViewById(R.id.tlButton));*/
 
 
         switch(direction){
             case 1:
-                bee.setRotation(45);
-                for (int i=0; i == 1000; i++){
-                    xPos -= 1;
-                    yPos += 1;
-                    bee.setX(xPos);
-                    bee.setY(yPos);
-                }
+                bee.setRotation(bee.getRotation()+90);
             case 2:
                 bee.setRotation(135);
             case 3:
