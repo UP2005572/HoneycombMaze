@@ -37,6 +37,7 @@ public class NodeMap {
                 break;
             case 6:
                 currentNode = currentNode.getTlNode();
+                break;
         }
     }
 /****************************************************/
