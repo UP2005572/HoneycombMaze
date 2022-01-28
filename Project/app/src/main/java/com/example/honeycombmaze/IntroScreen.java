@@ -26,4 +26,9 @@ public class IntroScreen extends AppCompatActivity {
             }
         });
     }
+
+    @Override
+    public void onBackPressed(){
+        //nothing happens
+    }
 }

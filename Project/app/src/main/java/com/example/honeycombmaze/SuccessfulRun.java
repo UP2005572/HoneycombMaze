@@ -26,4 +26,9 @@ public class SuccessfulRun extends AppCompatActivity {
             }
         });
     }
+
+    @Override
+    public void onBackPressed(){
+        //nothing happens
+    }
 }

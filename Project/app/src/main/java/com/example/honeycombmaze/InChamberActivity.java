@@ -8,6 +8,7 @@ import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 
 public class InChamberActivity extends AppCompatActivity {
@@ -82,14 +83,22 @@ public class InChamberActivity extends AppCompatActivity {
         ChooseButtons();
     }
 
+    @Override
+    public void onBackPressed(){
+       //nothing happens
+    }
+
     protected void ChangeNode(int decision){
+        HideDirButtons();
         nodeMap.decision(decision);
         CheckStatus(nodeMap.GetCurrentNode().getID());
-        ChooseButtons();
+        if (nodeMap.GetCurrentNode().getID() != 102 && nodeMap.GetCurrentNode().getID() != 101 ) {
+            ChooseButtons();
+        }
     }
 
     public void ChooseButtons(){
-        HideDirButtons();
+        if (nodeMap.GetCurrentNode().getID() == 0) {HideDirButtons();}
 
         if (nodeMap.GetCurrentNode().gettID() != -1){
             ShowButton(tButton);
@@ -144,15 +153,6 @@ public class InChamberActivity extends AppCompatActivity {
         HideButton(bButton);
         HideButton(blButton);
         HideButton(tlButton);
-    }
-
-    public void ShowDirButtons(){
-        ShowButton(tButton);
-        ShowButton(trButton);
-        ShowButton(brButton);
-        ShowButton(bButton);
-        ShowButton(blButton);
-        ShowButton(tlButton);
     }
 
 }

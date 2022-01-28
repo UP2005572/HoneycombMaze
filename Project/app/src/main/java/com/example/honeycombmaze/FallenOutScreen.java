@@ -26,4 +26,9 @@ public class FallenOutScreen extends AppCompatActivity {
             }
         });
     }
+
+    @Override
+    public void onBackPressed(){
+        //nothing happens
+    }
 }
