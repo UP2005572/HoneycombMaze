@@ -16,7 +16,7 @@ public class StartScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start_screen);
 
-        startButton = (ImageView) findViewById(R.id.hexagon);
+        startButton = findViewById(R.id.hexagon);
 
         startButton.setOnClickListener(new View.OnClickListener(){
             @Override

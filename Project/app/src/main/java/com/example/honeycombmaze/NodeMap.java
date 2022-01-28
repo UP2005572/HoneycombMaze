@@ -7,11 +7,12 @@ public class NodeMap {
     private Node head;
     private Node currentNode;
 
+
 /****************************************************/
 /**************      NAVIGATE       *****************/
 /****************************************************/
 /****************************************************/
-    public Node currentNode() { return currentNode;}
+    public Node GetCurrentNode() { return currentNode;}
 
     public void noDecision(){
         currentNode = currentNode.gettNode();
