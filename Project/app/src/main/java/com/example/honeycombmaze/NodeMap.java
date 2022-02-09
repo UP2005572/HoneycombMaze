@@ -14,10 +14,6 @@ public class NodeMap {
 /****************************************************/
     public Node GetCurrentNode() { return currentNode;}
 
-    public void noDecision(){
-        currentNode = currentNode.gettNode();
-    }
-
     public void decision(int decision) {
         switch (decision) {
             case 1:
@@ -46,7 +42,7 @@ public class NodeMap {
 /****************************************************/
 
     public NodeMap(InputStream in_s)  {
-        NodeCollection nodeCollection;   //scope: constructor only, part of process, no requirement to keep;
+        NodeCollection nodeCollection;
         try {
             nodeCollection = new NodeCollection(in_s);
             head = nodeCollection.get(0);

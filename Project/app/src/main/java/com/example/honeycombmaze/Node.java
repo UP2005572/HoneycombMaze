@@ -3,7 +3,6 @@ package com.example.honeycombmaze;
 public class Node {
 
     private int[] linkIDs;
-    private String[] possibleDoors = {"T", "TR", "BR", "B", "BL", "TL"};
 
     private int ID;
     private int tID;
@@ -12,8 +11,6 @@ public class Node {
     private int bID;
     private int blID;
     private int tlID;
-    private String question;
-    private String description;
 
     private Node tNode;
     private Node trNode;
@@ -53,22 +50,6 @@ public class Node {
     public void setTlNode(Node tlNode) {this.tlNode = tlNode;}
 
 
-    public int[] getLinkIDs() {return linkIDs;}
-
-
-
-    public void setDescription(){
-        if (this.ID == 102){
-            this.description = "You have fallen out of the maze!";
-        } else {
-            this.description = "Onto the next chamber.";
-        }
-    }
-
-    public String getDescription(){
-        return this.description;
-    }
-
     public Node(int ID, int tID, int trID, int brID, int bID, int blID, int tlID) {
         linkIDs = new int[6];
 
@@ -92,41 +73,9 @@ public class Node {
         this.tlID = tlID;
         linkIDs[5] = tlID;
 
-        setQuestion();
-
-        setDescription();
-
-    }
-    public String GenerateOptions(){
-        String opt = "";
-
-        for (int i = 0; i < 6; i++){
-            if (linkIDs[i] != -1){
-                opt += possibleDoors[i] + " ";
-            }
-        }
-
-        return opt;
-    }
-
-    public void setQuestion(){
-        for (int id: linkIDs){
-            if (id == 102){
-                this.question = "Press enter to return to the start.";
-            } else {
-                this.question = "Choose a door to enter:"+ GenerateOptions();
-            }
-        }
-    }
-
-    public String getQuestion() {
-        return question;
     }
 
     public Node() {}
-
-
-
 
     @Override
     public String toString() {
@@ -137,7 +86,7 @@ public class Node {
                 ", bID:" + bID +
                 ", blID:" + blID +
                 ", tlID:" + tlID +
-                ", question:'" + question + '\'';
+                 '\'';
     }
 
 
